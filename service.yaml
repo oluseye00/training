@@ -1,0 +1,15 @@
+#Service Type nodePort
+apiVersion: v1
+kind: Service
+metadata:
+  name: itern-service
+  labels:
+    app: iternus
+spec:
+  selector:
+    app: iternus
+  type: NodePort
+  ports:
+  - nodePort: 31676
+    port: 8080
+    targetPort: 8080

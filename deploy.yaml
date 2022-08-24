@@ -1,0 +1,22 @@
+#Deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: itern-deploy
+  labels:
+    app: iternus
+spec:
+ replicas: 3
+ selector:
+   matchLabels:
+     app: iternus
+ template:
+   metadata:
+     labels:
+       app: iternus
+   spec:
+     containers:
+     - name: iterncon
+       image: oluseye00/lab:{{build_number}}
+       ports:
+       - containerPort: 8080
