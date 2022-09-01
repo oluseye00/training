@@ -189,5 +189,4 @@
         <url>http://54.221.70.105:8082/artifactory/iternus-libs-release-local</url>
     </repository>
 </distributionManagement>
-
 </project>

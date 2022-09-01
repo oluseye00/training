@@ -27,7 +27,7 @@
               <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-war-plugin</artifactId>
         <configuration>
-             <webXml>/home/ubuntu/devops/testing/webapp/src/main/webapp/WEB-INF\web.xml</webXml>
+             <failOnMissingWebXml>false</failOnMissingWebXml>
             </configuration>
       </plugin>
 
@@ -190,4 +190,4 @@
     </repository>
 </distributionManagement>
 
-</project>
+</project>>
