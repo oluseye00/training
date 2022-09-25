@@ -24,17 +24,6 @@ pipeline {
          
       }
    
-     stage ('SonarQube Analysis') {
-        steps {
-              withSonarQubeEnv('sonar') {
-                
-				dir('webapp'){
-                 sh 'mvn -U clean install sonar:sonar'
-                }
-				
-              }
-            }
-      }
 
     stage ('Artifactory configuration') {
             steps {
